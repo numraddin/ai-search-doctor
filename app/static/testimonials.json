@@ -1,0 +1,26 @@
+{
+  "_help": "Replace these lorem ipsum entries with real people who used the tool, with their permission. Set placeholder to true to show a Draft tag. rating is 1 to 5 and can be a half, such as 4.5.",
+  "entries": [
+    {
+      "quote": "We finally understood why we are not listed on AI platforms. Thanks to AI search doctor.",
+      "name": "Nurlan Mammadov",
+      "role": "Marketing Manager, Expargo",
+      "rating": 4.5,
+      "placeholder": false
+    },
+    {
+      "quote": "Detailed evaluation helped us to define critical errors on our platform. Liked All in one solution",
+      "name": "Rovshan Huseynli",
+      "role": "Digital Marketing Manager, Brendfoni",
+      "rating": 5,
+      "placeholder": false
+    },
+    {
+      "quote": "This platform listed critical suggestions to be listed on top AI platforms. Now we have clear list of actions. Loved this.",
+      "name": "Ilkin Ismayilov",
+      "role": "BD manager, AktualOne",
+      "rating": 4.5,
+      "placeholder": false
+    }
+  ]
+}

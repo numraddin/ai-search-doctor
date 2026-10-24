@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Search Doctor | Get recommended by ChatGPT, Claude or Gemini</title>
+<meta name="description" content="Find out what keeps ChatGPT, Claude or Gemini from finding, trusting and citing your website, and get the exact fixes.">
+<meta name="theme-color" content="#060914">
+<link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/static/favicon.png">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><div class="gridlines"></div></div>
+
+<header class="top"><div class="wrap">
+  <div class="brand">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><circle cx="14" cy="14" r="7.2" fill="none" stroke="#fff" stroke-width="3"/><path d="M19.4 19.4 25.5 25.5" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/><path d="M9.1 14.2h2.5l1.5-3.4 2 6.6 1.5-3.2h2.3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>AI Search Doctor</span>
+  </div>
+  <div id="cfg" class="status"></div>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Be the website <span class="grad">AI recommends!</span></h1>
+    <p class="lead">When customers ask ChatGPT, Claude or Gemini, make sure your website is part of the answer. See what is holding it back and get the exact fixes.</p>
+
+    <form id="form" class="linkbox" autocomplete="off">
+      <label class="boxlabel" for="firstlink">Pages to analyze</label>
+      <div id="links"></div>
+      <div class="addwrap">
+        <button type="button" id="addlink" class="addlink">+ Add another link</button>
+        <span id="linkcount" class="muted small"></span>
+      </div>
+      <button id="go" type="submit" class="cta"><span class="ctatxt">Analyze Website</span><span class="spin" hidden></span></button>
+      <div class="hint">We analyze <b>only the links you enter</b>.<span id="quota"></span></div>
+    </form>
+    <div id="formerr" class="err" hidden></div>
+
+    <div class="steps">
+      <div><h3><b>1</b>Read</h3><p>Reads only the pages you enter and respects robots.txt.</p></div>
+      <div><h3><b>2</b>Check</h3><p>Six checks: readability, answers, trust, speed, freshness, data.</p></div>
+      <div><h3><b>3</b>Verify</h3><p>Every AI finding needs a real quote from your pages.</p></div>
+      <div><h3><b>4</b>Improve</h3><p>Get clear suggestions, then analyze again and compare.</p></div>
+    </div>
+  </section>
+
+  <section id="progress" class="glass" hidden>
+    <h2>Your AI agents are working<span class="dots"><i></i><i></i><i></i></span></h2>
+    <div id="agentlist" class="pipeline"></div>
+  </section>
+
+  <section id="results" hidden>
+    <div id="unreadable" class="unread" hidden></div>
+    <div id="reportbody">
+    <div class="titlebar">
+      <div><div class="muted small">Audit report</div><h2 id="rtitle"></h2><div id="rlinks" class="plinks"></div><div id="rmeta" class="muted small"></div></div>
+      <button id="savereport" class="ghost" type="button">Save report (PDF)</button>
+    </div>
+    <div id="printreport"></div>
+    <nav class="tabs" id="tabs"></nav>
+    <div id="panels"></div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testi" hidden>
+    <h2>What people say</h2>
+    <p class="muted">Real feedback from people who used AI Search Doctor on their own websites.</p>
+    <div class="tgrid" id="tgrid"></div>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

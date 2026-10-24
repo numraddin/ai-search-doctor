@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+openai
+httpx[http2]
+beautifulsoup4
+lxml
+python-dotenv
+pytest

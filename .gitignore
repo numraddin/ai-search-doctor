@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/
+.pytest_cache/
+.DS_Store
+.claude/
+evaluation/eval.db
+evaluation/cost_run.log
+# kept out of the public repository: the Canvas deliverables and the customer material behind them
+report.html
+slides.html
+docs/
+evaluation/real_*.md
+evaluation/*.log

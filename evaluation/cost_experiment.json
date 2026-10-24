@@ -1,0 +1,95 @@
+[
+ {
+  "config": "full",
+  "tokens": 3911.95,
+  "input": 2472.3,
+  "output": 1439.65,
+  "cost": 0.000967,
+  "recall": 0.9379310344827586,
+  "hits": 136,
+  "items": 145,
+  "missed": {
+   "b:no_pricing": 1,
+   "d:hours_contradiction": 3,
+   "d:unsupported_claims": 5
+  },
+  "unexpected": 3,
+  "fixes": 3.7,
+  "seconds": 9.315
+ },
+ {
+  "config": "trunc400",
+  "tokens": 3404.7,
+  "input": 2128.9,
+  "output": 1275.8,
+  "cost": 0.0008508,
+  "recall": 0.896551724137931,
+  "hits": 130,
+  "items": 145,
+  "missed": {
+   "d:hours_contradiction": 5,
+   "d:price_contradiction": 5,
+   "d:unsupported_claims": 5
+  },
+  "unexpected": 0,
+  "fixes": 3.1,
+  "seconds": 8.27
+ },
+ {
+  "config": "trunc200",
+  "tokens": 3312,
+  "input": 2040.35,
+  "output": 1271.65,
+  "cost": 0.00084,
+  "recall": 0.7931034482758621,
+  "hits": 115,
+  "items": 145,
+  "missed": {
+   "c:price_contradiction": 5,
+   "d:hours_contradiction": 5,
+   "d:founding_year_contradiction": 5,
+   "d:team_size_contradiction": 5,
+   "d:price_contradiction": 5,
+   "d:unsupported_claims": 5
+  },
+  "unexpected": 3,
+  "fixes": 3.05,
+  "seconds": 8.615
+ },
+ {
+  "config": "nofix",
+  "tokens": 2423.05,
+  "input": 1316,
+  "output": 1107.05,
+  "cost": 0.0006852,
+  "recall": 0.9517241379310345,
+  "hits": 138,
+  "items": 145,
+  "missed": {
+   "b:no_pricing": 1,
+   "d:unsupported_claims": 5,
+   "d:hours_contradiction": 1
+  },
+  "unexpected": 1,
+  "fixes": 0,
+  "seconds": 6.37
+ },
+ {
+  "config": "trunc400+nofix",
+  "tokens": 2285.9,
+  "input": 1216.25,
+  "output": 1069.65,
+  "cost": 0.00065645,
+  "recall": 0.903448275862069,
+  "hits": 131,
+  "items": 145,
+  "missed": {
+   "d:hours_contradiction": 5,
+   "d:price_contradiction": 5,
+   "d:unsupported_claims": 4
+  },
+  "unexpected": 4,
+  "fixes": 0,
+  "seconds": 6.21
+ }
+]
